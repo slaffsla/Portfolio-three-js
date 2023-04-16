@@ -14,7 +14,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  firebase,
   optima,
   siema,
   carrent,
@@ -107,8 +107,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "firebase",
+    icon: firebase,
   },
 ];
 

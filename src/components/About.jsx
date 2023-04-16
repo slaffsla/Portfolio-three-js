@@ -40,7 +40,7 @@ const About = () => {
     I am a self-tought software developer with experience in JS, TypeScript, React, Redux, React Native, Node.js, Three.js, Firebase, TailwindCSS, Framer Motion and more. I am a quick learner and can pick up a skill when needed. This is my personal site where you can look into my accomplishments, skills and charisma, so that you're left without many options, other than hire me before i'm snatched. Let's build stuff together!
     </motion.p>
 
-    <div className='mt-20 flex flex-wrap gap-10'>
+    <div className='mt-20 flex flex-wrap gap-8 justify-center' >
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service}/>
       ))}

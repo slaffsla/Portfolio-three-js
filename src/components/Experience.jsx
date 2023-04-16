@@ -19,15 +19,15 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "8px solid  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full bg-white'>
+        <div className='flex justify-center items-center w-full h-full'>
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[90%] h-[90%] object-contain'
+            className='w-[99%] h-[99%] object-contain rounded-full'
           />
         </div>
       }
@@ -68,8 +68,11 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col max-w-8xl'>
-        <VerticalTimeline>
+      <div className='mt-20 flex flex-col '>
+        <VerticalTimeline
+          lineColor={ "#1d1141" }
+          layout={'1-column-left'}
+        >
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
