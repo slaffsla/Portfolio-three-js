@@ -17,9 +17,11 @@ import {
   firebase,
   optima,
   siema,
-  carrent,
-  jobit,
-  tripguide,
+  millionaire,
+  social_app,
+  memorize_dots,
+  chat_app,
+  ftw_quiz,
   threejs,
 } from "../assets";
 
@@ -141,87 +143,40 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Millionaire — Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A quiz-like game (who wants to be a millionaire) tracking player progress and providing feedback on right/wrong answers.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: millionaire,
+    source_code_link: "https://github.com/slaffsla/millionaire-game",
+    project_link: "https://millionaire-who-wants.web.app/",
   },
   {
-    name: "Job IT",
+    name: "Social App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A social app where users can log in, post, delete and like messages. Facebook must be scared now!",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
@@ -229,9 +184,76 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: social_app,
+    source_code_link: "https://github.com/slaffsla/social-app",
+    project_link: "https://social-app-sla.web.app",
+  },
+  {
+    name: "Colorful Bubbles App",
+    description:
+      "A fun app where you can place colorful bubbles on the screen. You can also undo and redo any action.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: memorize_dots,
+    source_code_link: "https://github.com/slaffsla/memorize-dots-react",
+    project_link: "https://colorful-bubbles-fun.web.app/",
+  },
+  {
+    name: "Chat App",
+    description:
+      "App where users can log in, create rooms and chat on whichever subject they want.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chat_app,
+    source_code_link: "https://github.com/slaffsla/react-chat-app",
+    project_link: "https://cool-chat-app-ddee0.web.app/",
+  },
+  {
+    name: "Interview Simulator",
+    description:
+      "React Native App for people preparing for a job interview.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "expo.dev",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ftw_quiz,
+    source_code_link: "https://github.com/slaffsla/INTERVIEW-SIMULATOR",
+    project_link: "https://snack.expo.dev/@zabaroth/ai-ftw-quiz",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

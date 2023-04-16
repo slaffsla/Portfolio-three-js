@@ -1,17 +1,17 @@
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, live_proj } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({index, name, description, tags, links, image, source_code_link}) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, project_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 95,
           scale: 1,
           speed: 450,
         }}
@@ -27,7 +27,7 @@ const ProjectCard = ({index, name, description, tags, links, image, source_code_
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-1'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={github}
@@ -37,18 +37,18 @@ const ProjectCard = ({index, name, description, tags, links, image, source_code_
             </div>
 
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open(project_link, "_blank")}
+              className='violet-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
-                alt='source code'
+                src={live_proj}
+                alt='live project'
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
 
           </div>
-          
+
         </div>
 
         <div className='mt-5'>

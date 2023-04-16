@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import live_proj from "./live_proj.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -24,9 +25,11 @@ import threejs from "./tech/threejs.svg";
 import optima from "./company/optima.png";
 import siema from "./company/siema.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import millionaire from "./millionaire.png";
+import social_app from "./social-app.png"
+import memorize_dots from "./memorize_dots.png";
+import chat_app from "./chat_app.png";
+import ftw_quiz from "./ftw_quiz.png"
 
 export {
   logo,
@@ -41,6 +44,7 @@ export {
   firebase,
   figma,
   git,
+  live_proj,
   html,
   javascript,
   mongodb,
@@ -52,7 +56,9 @@ export {
   threejs,
   optima,
   siema,
-  carrent,
-  jobit,
-  tripguide,
+  millionaire,
+  social_app,
+  memorize_dots,
+  chat_app,
+  ftw_quiz
 };
