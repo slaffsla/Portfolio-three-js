@@ -235,7 +235,7 @@ const projects = [
   {
     name: "Interview Simulator",
     description:
-      "React Native App for people preparing for a job interview.",
+      "React Native App for people preparing for a job interview. This is a collab.",
     tags: [
       {
         name: "React Native",
