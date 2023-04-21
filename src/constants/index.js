@@ -145,9 +145,9 @@ const experiences = [
 
 const projects = [
   {
-    name: "Millionaire — Game",
+    name: "Colorful Bubbles App",
     description:
-      "A quiz-like game (who wants to be a millionaire) tracking player progress and providing feedback on right/wrong answers.",
+      "A fun app where you can place colorful bubbles on the screen. You can also undo and redo any action.",
     tags: [
       {
         name: "react",
@@ -158,14 +158,15 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "styled-components",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: millionaire,
-    source_code_link: "https://github.com/slaffsla/millionaire-game",
-    project_link: "https://millionaire-who-wants.web.app/",
+    image: memorize_dots,
+    source_code_link: "https://github.com/slaffsla/memorize-dots-react",
+    project_link: "https://colorful-bubbles-fun.web.app/",
   },
+
   {
     name: "Social App",
     description:
@@ -188,10 +189,11 @@ const projects = [
     source_code_link: "https://github.com/slaffsla/social-app",
     project_link: "https://social-app-sla.web.app",
   },
+
   {
-    name: "Colorful Bubbles App",
+    name: "Millionaire — Game",
     description:
-      "A fun app where you can place colorful bubbles on the screen. You can also undo and redo any action.",
+      "A quiz-like game (who wants to be a millionaire) tracking player progress and providing feedback on right/wrong answers.",
     tags: [
       {
         name: "react",
@@ -202,14 +204,15 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: memorize_dots,
-    source_code_link: "https://github.com/slaffsla/memorize-dots-react",
-    project_link: "https://colorful-bubbles-fun.web.app/",
+    image: millionaire,
+    source_code_link: "https://github.com/slaffsla/millionaire-game",
+    project_link: "https://millionaire-who-wants.web.app/",
   },
+
   {
     name: "Chat App",
     description:
@@ -235,7 +238,7 @@ const projects = [
   {
     name: "Interview Simulator",
     description:
-      "React Native App for people preparing for a job interview. This is a collab.",
+      "React Native App for people preparing for a job interview. This is a collab in progress.",
     tags: [
       {
         name: "React Native",
